@@ -1,0 +1,57 @@
+
+<footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Happy <span>Home</span></h3>
+            <h2>AUTOMATIZACIÓN DEL HOGAR</h2>
+
+            <p class="footer-links">
+                
+                <%= link_to 'Inicio', root_path%>
+                |
+                <%= link_to 'Servicios', servicios_path%>
+                |
+                <%= link_to 'Sobre Nosotros', sobre_nosotros_path%>
+                |
+                <%= link_to 'Contacto', contacto_path%>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2024 <strong>HappyHome</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <%= image_tag 'icons/geo-alt.svg', alt: 'Logo', class: 'i'%>
+                <p><span>Mendoza</span>
+                    Argentina</p>
+            </div>
+
+            <div>
+                <%= image_tag 'icons/telephone-outbound.svg', alt: 'Logo', class: 'i'%>
+                <p><a href="tel:+542615465463">+54 261 546 5463</a></p>
+            </div>
+            <div>
+                <%= image_tag 'icons/envelope.svg', alt: 'Logo', class: 'i'%>
+                <p><a href="mailto:happyhome.automatizacion@gmail.com">happyhome.automatizacion@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Sobre nosotros</span>
+                <strong>En Happy Home, nos dedicamos a transformar la seguridad y comodidad de los hogares
+                    con soluiones innovadoras. Nuestro objetivo es hacer que cada hogar sea más seguro, eficiente y confortable, 
+                    superando siempre las expectativas de nuestros clientes.
+            </p>
+            <div class="footer-icons">
+                <%= link_to 'https://www.instagram.com/happyhome.arg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', target: '_blank' do %>
+                    <%= image_tag 'icons/instagram.svg', alt: 'Logo' %>
+                <% end %>
+                <%= link_to 'https://www.instagram.com/happyhome.arg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', target: '_blank' do %>
+                    <%= image_tag 'icons/linkedin.svg', alt: 'Logo' %>
+                <% end %>
+                <%= link_to 'https://api.whatsapp.com/send/?phone=5492615465463&text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n+sobre+sus+servicios.&type=phone_number&app_absent=0', target: '_blank' do %>
+                    <%= image_tag 'icons/whatsapp.svg', alt: 'Logo' %>
+                <% end %>
+            </div>
+        </div>
+    </footer>

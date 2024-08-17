@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*-----------------------------------------------------*/
+/*                     SECCIÓN INICIO                  */
+/*-----------------------------------------------------*/
+
+        /*---------------------------------------------*/
+        /*                 SECCIÓN AZUL 1
+        /*---------------------------------------------*/
+
+#inicio .blue-section {
+    font-family: 'Inter', sans-serif;
+    /*background-color: #004AAC;*/
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    padding-top: 160px;
+    padding-left: 53px;
+    
+    
+}
+
+#inicio .blue-section{
+    background-image: url(6577.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#inicio #section1 h1 {
+    color: #fff;
+    margin: 0px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 500;
+    max-width: 730px; /* Limita el ancho del texto para mejorar la legibilidad */ 
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 1);
+}
+#inicio #section1 p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0px;
+    max-width: 650px; /* Limita el ancho del texto para mejorar la legibilidad */
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 1);
+    
+}
+
+#inicio #section1 .btn{
+    
+    font-family: 'Mukta Mahee', sans-serif;
+    margin-top: 500px;
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+
+    margin: 0px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #000;
+    border: none;
+    transition: .5s;
+    letter-spacing: 2px; /* Ajusta el espaciado entre letras */
+    padding: 10px 20px;
+}
+
+#inicio #section1 .boton{
+    margin-top: 120px;
+    margin-left: 20px;
+    
+}
+
+#inicio #section1 .btn:hover{
+    background-color: #004AAC;
+    color: #fff;
+    
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    #inicio .blue-section {
+        font-family: 'Inter', sans-serif;
+        /*background-color: #004AAC;*/
+        height: 100vh; /* Ocupa toda la altura de la pantalla */
+        padding-top: 160px;
+        padding-left: 15px;
+        padding-right: 20px;
+        
+        
+    }
+}
+
+        /*---------------------------------------------*/
+        /*                 SECCIÓN BLANCA
+        /*---------------------------------------------*/
+
+#inicio .white-section {
+    padding-top: 100px;
+    max-width: 1300px;
+    margin: auto;
+    background-color: #fff;
+    color: #004AAC;
+    height: fit-content; /* Puedes ajustar esto según el contenido */
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+#inicio .white-section h2 {
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    max-width: 756px; /* Limita el ancho del texto para mejorar la legibilidad */  
+}
+
+
+#inicio .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea verticalmente los elementos */
+    padding: 20px; /* Ajusta el espacio alrededor del contenido según sea necesario */
+}
+
+#inicio .texto-boton {
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    padding-right: 0px; /* Espacio entre el texto y la imagen */
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+#inicio .texto p{
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 465px;
+}
+
+#inicio .img_IE {
+    flex: 1; /* Ocupa la otra mitad del espacio disponible */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    
+}
+
+#inicio .img_IE img {
+    max-width: 90%; /* Ajusta la imagen para que no exceda el tamaño del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+#inicio .contenedor .texto-boton .boton {
+    padding-top: 60px;
+    margin:auto;
+    align-self: flex-end;
+}
+
+#inicio .contenedor .texto-boton .boton .btn{
+    
+    font-family: 'Mukta Mahee', sans-serif;
+    margin-top: 500px;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+
+    margin: 0px;
+    background-color: #004AAC;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    transition: .5s;
+    padding: 10px 20px;
+}
+#inicio .contenedor .texto-boton .boton .btn:hover{
+    
+    background-color: #3F71EA;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    #inicio .img_IE {
+        display: none;
+    }
+
+    #inicio .texto-boton {
+        flex: none;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    #inicio .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #inicio .contenedor .texto-boton .boton {
+        align-self: center;
+        margin-bottom: 15px;
+        
+    }
+
+
+    #inicio .texto p{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        max-width: 465px;
+        
+    }
+    #inicio .white-section h2 {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-weight: 700;
+        max-width: 756px; /* Limita el ancho del texto para mejorar la legibilidad */  
+    }
+}
+
+
+        /*---------------------------------------------*/
+        /*                 SOBRE MI
+        /*---------------------------------------------*/   
+
+        #inicio .sobre_mi{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-image: url(fondo_sobremi.jpeg);
+    background-repeat: repeat-x;
+    height: fit-content;
+    
+}
+
+#inicio .sobre_mi .fila{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: 15px auto;
+    
+}
+
+#inicio .sobre_mi .fila .informacion{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    max-width: 480px;
+    background-color: rgba(25, 43, 116, 0.4);
+    padding: 30px;
+    padding-top: 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#inicio .sobre_mi .fila h3{
+    font-weight: 700;
+    font-size: 24px;
+   margin-bottom: 10px;
+}
+
+#inicio .sobre_mi .fila p{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#inicio .sobre_mi .fila .informacion:hover{
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+#inicio .sobre_mi .fila .informacion .icono, .sobre_mi .fila .informacion .icono2, .sobre_mi .fila .informacion .icono4{
+    display: inline-block;  
+
+}
+
+#inicio .sobre_mi .fila .informacion .icono img{
+    width: auto;
+    height: 90px;
+    margin-bottom: 5px;
+    
+}
+
+#inicio .sobre_mi .fila .informacion .icono2 img{
+    width: 70px;
+    height: auto;
+    margin-bottom: 5px;
+    
+}
+
+#inicio .sobre_mi .fila .informacion .icono4 img{
+    width: auto;
+    height: 90px;
+    margin-bottom: 5px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    #inicio .sobre_mi .fila h3{
+        font-weight: 700;
+        font-size: 18px;
+       margin-bottom: 10px;
+    }
+    
+    #inicio .sobre_mi .fila p{
+        font-weight: 500;
+        font-size: 14px;
+    }
+    #inicio .sobre_mi .fila .informacion{
+        font-family: 'Inter', sans-serif;
+        color: white;
+        max-width: 45%;
+        background-color: rgba(25, 43, 116, 0.4);
+        padding: 10px;
+        padding-top: 20px;
+        margin: 0 5px;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+}

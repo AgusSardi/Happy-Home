@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #fff;
+  position: fixed;
+  padding: 10px 20px;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  top: 0;
+  border-radius: 0 0 7px 7px;
+  z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajusta la distribución entre los elementos */
+  }
+  
+  .brand-text h1 {
+    margin: 0;
+    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  .brand-text p {
+    margin: 0;
+    font-size: 14px; /* Ajusta el tamaño del texto según sea necesario */
+    color: #666; /* Ajusta el color del texto según sea necesario */
+  }
+
+  .brand-text img {
+    width: 300px;
+    height: auto;
+  }
+  
+  #lista_nav {
+    flex-grow: 1;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /* Espacia los ítems de navegación */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #004aac;
+    font-size: 20px; /* Ajusta el tamaño del texto según sea necesario */
+    font-weight: 500;
+    transition: .5s;
+  }
+  
+  .nav-item a:hover {
+    color: #007bff;
+  }
+  
+  #img_justify {
+    width: 50px; /* Ajusta el tamaño del contenedor de la imagen según sea necesario */
+    height: 50px;
+    display: none;
+  }
+  
+  .navbar-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-menu ul li {
+    margin: 5px 0;
+  }
+  
+  /* Mostrar el menú cuando se activa */
+  .navbar-menu.show {
+    display: block;
+  }
+  
+  /* Ocultar el menú cuando no está activo */
+  .hidden {
+    display: none;
+  }
+  
+  #img_justify {
+    cursor: pointer; /* Hace que el ícono parezca clicable */
+  }
+
+@media (max-width: 1000px) {
+  .brand-text img {
+    width: 200px;
+  }
+  .navbar-nav {
+    
+    display: none;
+    
+  }
+
+  #img_justify {
+    width: 50px; /* Ajusta el tamaño del contenedor de la imagen según sea necesario */
+    height: 50px;
+    display: block;
+  }
+
+  
+  .navbar-nav-side{
+    position: fixed;
+    top: 85px;
+    right: 0;
+    height: fit-content;
+    width: 115px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: flex-start;
+    
+    border-radius: 5px;
+    padding-right: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+
+  }
+ 
+  .navbar-nav-side li{
+    width: 100%;
+    margin-left: 50px;
+  }
+}

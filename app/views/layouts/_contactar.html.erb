@@ -1,0 +1,44 @@
+<!-- SECCION CONTACTO -->
+<section id="contactar">
+    <h3 class="titulo-seccion">Contáctanos</h3>
+    <div class="contenedor-form">
+        <form id="contactForm">
+            <div class="fila mitad">
+                <input type="text" id="nombre" placeholder="Nombre y Apellido" class="input-mitad">
+                <input type="email" id="email" placeholder="Correo Electrónico" class="input-mitad">
+            </div>
+            <div class="fila">
+                <input type="text" id="telefono" placeholder="Número de Teléfono (opcional)" class="input-full">
+            </div>
+            <div class="fila">
+                <textarea id="mensaje" cols="30" rows="10" placeholder="¿Cómo podemos ayudarte?" class="input-full"></textarea>
+            </div>
+            <div class="botones">
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                <a href="https://api.whatsapp.com/send/?phone=5492615465463&text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n+sobre+sus+servicios.&type=phone_number&app_absent=0" class="whatsapp-button" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+                    Chatea con nosotros en WhatsApp
+                </a>
+            </div>
+        </form>
+    </div>
+</section>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evitar el envío real del formulario
+
+        // Obtener los valores del formulario
+        const nombre = document.getElementById('nombre').value;
+        const email = document.getElementById('email').value;
+        const telefono = document.getElementById('telefono').value;
+        const mensaje = document.getElementById('mensaje').value;
+
+        // Construir el enlace mailto
+        let mailtoLink = `mailto:agussardi@hotmail.com?subject=Contacto de ${nombre}&body=Nombre: ${nombre}%0AEmail: ${email}%0ATeléfono: ${telefono}%0AMensaje: ${mensaje}`;
+
+        // Abrir el enlace mailto
+        window.location.href = mailtoLink;
+    });
+</script>
+

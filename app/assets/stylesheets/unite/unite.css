@@ -1,0 +1,85 @@
+#unite .blue-section {
+    font-family: 'Inter', sans-serif;
+    background-color: #004AAC;
+    height: 70vh; /* Ocupa toda la altura de la pantalla */
+    padding-top: 150px;
+    padding-left: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#unite #section1 h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    max-width: 400px; /* Limita el ancho del texto para mejorar la legibilidad */ 
+    margin-bottom: 80px;
+}
+
+#unite #section1 p{
+    color: #fff;
+    
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 450px; /* Limita el ancho del texto para mejorar la legibilidad */ 
+}
+
+
+#unite #contact{
+    padding: 100px 15px;
+    font-family: 'Inter', sans-serif;
+    height: fit-content;
+    
+}
+
+#unite #contact .titulo-seccion{
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#unite #contact .contenedor-form{
+    max-width: 900px;
+    margin: auto;
+    
+}
+
+#unite #contact .contenedor-form .fila{
+    margin-bottom: 15px;
+}
+
+#unite #contact .contenedor-form .mitad{
+    display: flex;
+    justify-content: space-between;
+}
+#unite #contact .contenedor-form input, 
+#unite #contact .contenedor-form textarea{
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #919191;
+}
+
+#unite #contact .contenedor-form .mitad input{
+    width: 48%;
+}
+
+#unite #contact .contenedor-form .input-full{
+    width: 100%;
+}
+
+#unite #contact .btn-enviar{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 10px 15px;
+}
+
+#unite #contact .btn-enviar:hover{
+    background-color: #004AAC;
+    color: #fff;
+}

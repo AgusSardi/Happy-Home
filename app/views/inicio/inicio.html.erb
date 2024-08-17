@@ -1,0 +1,163 @@
+
+<section id = "inicio">
+
+    <section id="section1" class="section blue-section">
+        <div id="prueba">
+            <h1 class="titulo">Nos especializamos en converir tu 
+                hogar en un lugar inteligente, seguro 
+                y eficiente.
+            </h1>
+            <p>Nos apasiona la innovación y queremos ayudarte a 
+            incorporar la última tecnología en tu casa.</p>
+        </div>
+        <div class="boton">
+            <%= link_to 'POTENCIAR MI HOGAR', contacto_path, class: 'btn btn-primary'%>
+        </div>
+    </section>
+
+    <section id="section2" class="section white-section">
+        <div class = "contenedor">
+            <div class = "texto-boton">
+                <div class = "texto">
+                    <h2>Instalaciones eléctricas domiciliarias</h2>
+                    <p>¡Realizamos todo por vos! Instalaciones, 
+                        reparaciones y mejoras eléctricas seguras y 
+                        eficientes, adaptadas a tu estilo de vida con la 
+                        mejor tecnología.</p>
+                </div>
+                
+                <div class="boton">
+                    <%= link_to 'Conocer más', servicios_electricas_path, class: 'btn btn-primary'%>
+                </div>
+            </div>
+
+            <div class = "img_IE">
+                <%= image_tag 'home/imgIE.jpg', alt: 'Instalaciones eléctricas domiciliarias' %>
+            </div>
+        </div>
+        <div class = "contenedor">
+
+            <div class = "img_IE">
+                <%= image_tag 'home/imgRI.jpg', alt: 'Riegos automáticos' %>
+            </div>
+
+            <div class = "texto-boton">
+                <div class = "texto">
+                    <h2>Riegos automáticos</h2>
+                    <p>¡Olvidate de regar a mano! Con nuestros 
+                        sistemas de riego automático, tu jardín estará 
+                        siempre perfecto sin que tengas que 
+                        preocuparte.</p>
+                </div>
+                <div class="boton">
+                    <%= link_to 'Conocer más', servicios_riego_path, class: 'btn btn-primary'%>
+                </div>
+            </div>
+
+            
+        </div>
+        <div class = "contenedor">
+            <div class = "texto-boton">
+                <div class = "texto">
+                    <h2>Domótica pra tu hogar</h2>
+                    <p>Transformá tu hogar en un espacio inteligente y 
+                        cómodo. Con nuestra domótica, controlá luces, 
+                         cortinas, termostatos y más. Todo desde tu 
+                         celular o simplemente voz. </p>
+                </div>
+                <div class="boton">
+                    <%= link_to 'Conocer más', servicios_domotica_path, class: 'btn btn-primary'%>
+                </div>
+            </div>
+
+            <div class = "img_IE">
+                <%= image_tag 'home/imgDM.jpg', alt: 'Domótica para tu hogar' %>
+            </div>
+        </div>
+
+        <div class = "contenedor">
+
+            <div class = "img_IE">
+                <%= image_tag 'home/imgS.jpg', alt: 'Cámaras de vigilancia' %>
+            </div>
+
+            <div class = "texto-boton">
+                <div class = "texto">
+                    <h2>Cámaras de vigilancia WiFi</h2>
+                    <p>Mantené tu hogar seguro con nuestras 
+                        soluciones de monitoreo. Instalamos cámaras 
+                        que podés controlar y ver desde tu celular. 
+                        Siempre sabrás que pasa en tu casa, sin 
+                        importar donde estés.
+                    </p>
+                </div>
+                <div class="boton">
+                    <%= link_to 'Conocer más', servicios_seguridad_path, class: 'btn btn-primary'%>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+
+    <section class = "sobre_mi">
+
+        <div class= "fila">
+            <div class= "informacion">
+                <span class= "icono"> <%= image_tag 'home/exp.png', alt: 'Cámaras de vigilancia' %> </span>
+                <h3> Experiencia y Profesionalismo </h3>
+                <p> 
+                    En Happy Home, contamos con un equipo de profesionales 
+                    altamente capacitados y con experiencia en el sector. Nos 
+                    comprometemos a ofrecer soluciones de calidad que cumplan 
+                    con los más altos estándares de seguridad y eficiencia. 
+                </p>
+            </div>
+
+            <div class= "informacion">
+                <span class= "icono2"> <%= image_tag 'home/atp.png', alt: 'Cámaras de vigilancia' %> </span>
+                <h3> Atención Personalizada </h3>
+                <p> 
+                    Entendemos que cada hogar es único. Por eso, ofrecemos un
+                    servicio personalizado, adaptado a las necesidades y 
+                    preferencias de cada cliente. Desde el primer contacto hasta la 
+                    finalización del proyecto, estamos a tu disposición para 
+                    asegurarnos de que quedes completamente satisfecho. 
+                </p>
+            </div>
+        </div>
+
+        <div class= "fila">
+            <div class= "informacion">
+                <span class= "icono"> <%= image_tag 'home/tv.png', alt: 'Cámaras de vigilancia' %> </span>
+                <h3> Tecnología de Vanguardia </h3>
+                <p> 
+                    Utilizamos las últimas tecnologías y herramientas en todos 
+                    nuestros servicios, desde instalaciones eléctricas hasta 
+                    sistemas de domótica y cámaras de seguridad. Esto nos 
+                    permite ofrecer soluciones más eficientes, seguras y 
+                    fáciles de usar. 
+                </p>
+            </div>
+
+            <div class= "informacion">
+                <span class= "icono4"> <%= image_tag 'home/gs.png', alt: 'Cámaras de vigilancia' %> </span>
+                <h3> Garantía y Soporte </h3>
+                <p> 
+                    Nos enorgullecemos de ofrecer una garantía sólida en todos 
+                    nuestros trabajos. Además, brindamos soporte técnico 
+                    contínuo para resolver cualquier problema o duda que 
+                    puedas tener. Con Happy Home, siempre tendrás la 
+                    tranquilidad de contar con un respaldo confiable. 
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <%= render 'layouts/contactar' %>
+
+    <%= render 'layouts/footer' %>
+</section>

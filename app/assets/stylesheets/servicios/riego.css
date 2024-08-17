@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap');
+
+
+/*-----------------------------------------------------*/
+/*                    SECCIÓN SERVICIOS                */
+/*-----------------------------------------------------*/
+
+        /*---------------------------------------------*/
+        /*                 SECCIÓN AZUL 1
+        /*---------------------------------------------*/
+
+#riego .blue-section {
+    font-family: 'Inter', sans-serif;
+    background-color: #004AAC;
+    height: 60vh; /* Ocupa toda la altura de la pantalla */
+    padding-top: 250px;
+    padding-left: 53px;
+    display: flex;
+    align-items: normal;
+    justify-content: start;
+}
+
+#riego #section1 h1 {
+    color: #fff;
+    margin: auto;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #riego .blue-section {
+        font-family: 'Inter', sans-serif;
+        background-color: #004AAC;
+        height: 40vh; /* Ocupa toda la altura de la pantalla */
+        padding: 0px;
+        padding-top: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #riego #section1 h1 {
+        color: #fff;
+        margin: auto;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-weight: 500;
+
+    }
+}
+        /*---------------------------------------------*/
+        /*                 SECCIÓN BLANCA
+        /*---------------------------------------------*/
+
+#riego .white-section {
+    padding-top: 100px;
+    max-width: 1500px;
+    margin:auto;
+    background-color: #fff;
+    color: #004AAC;
+    height: fit-content; /* Puedes ajustar esto según el contenido */
+  }
+  #riego .white-section .contenedor{
+    padding: 20px; /* Ajusta el espacio alrededor del contenido según sea necesario */
+}
+  
+#riego .white-section .contenedor h1 {
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    max-width: 756px; /* Limita el ancho del texto para mejorar la legibilidad */ 
+    margin-left: 0px;
+}
+
+#riego .white-section .contenedor .lista li {
+    font-size: 25px;
+    font-weight: 500;
+    
+    margin-bottom: 10px;
+}
+
+#riego .white-section .contenedor .lista {
+    margin: auto;
+    margin-bottom: 50px;
+    max-width: 1300px; /* Limita el ancho del texto para mejorar la legibilidad */
+
+}
+
+
+
+
+#riego .img_IE {
+    
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    margin-bottom: 40px;
+    
+}
+
+#riego .img_IE img {
+    max-width: 90%; /* Ajusta la imagen para que no exceda el tamaño del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+span{
+    font-weight: bold;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    #riego .img_IE {
+        max-width: 100%;
+    }
+    #riego .img_IE img {
+        max-width: 100%; /* Ajusta la imagen para que no exceda el tamaño del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+    
+    #riego .white-section .contenedor .lista li{
+        font-size: 20px;
+        font-weight: 400;
+        max-width: 465px;
+    }
+
+    #riego .texto-boton {
+        flex: none;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    #riego .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #riego .contenedor .texto-boton .boton {
+        align-self: center;
+        margin: 20px 0;
+    }
+}

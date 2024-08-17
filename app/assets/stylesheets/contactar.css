@@ -1,0 +1,107 @@
+/* SECCION CONTACTO */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+#contactar{
+    padding: 100px 15px;
+    font-family: 'Inter', sans-serif;
+    height: fit-content;
+    
+}
+
+#contactar .titulo-seccion{
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#contactar .contenedor-form{
+    max-width: 900px;
+    margin: auto;
+    
+}
+
+#contactar .contenedor-form .fila{
+    margin-bottom: 15px;
+}
+
+#contactar .contenedor-form .mitad{
+    display: flex;
+    justify-content: space-between;
+}
+#contactar .contenedor-form input, 
+#contactar .contenedor-form textarea{
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #919191;
+}
+
+#contactar .contenedor-form .mitad input{
+    width: 48%;
+}
+
+#contactar .contenedor-form .input-full{
+    width: 100%;
+}
+
+#contactar .botones{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#contactar .btn-enviar{
+    display: block;
+    
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 10px 15px;
+}
+
+#contactar .btn-enviar:hover{
+    background-color: #004AAC;
+    color: #fff;
+}
+
+/* INCONO WPP */
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #1EBF57;
+}
+
+.whatsapp-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .whatsapp-button {
+        display: inline-flex;
+        align-items: center;
+        background-color: #25D366;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+        transition: background-color 0.5s ease;
+        width: 60%;
+    }
+}

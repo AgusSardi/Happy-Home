@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap');
+
+
+/*-----------------------------------------------------*/
+/*                    SECCIÓN SERVICIOS                */
+/*-----------------------------------------------------*/
+
+        /*---------------------------------------------*/
+        /*                 SECCIÓN AZUL 1
+        /*---------------------------------------------*/
+
+#contacto .blue-section {
+    font-family: 'Inter', sans-serif;
+    background-color: #004AAC;
+    height: 40vh; /* Ocupa toda la altura de la pantalla */
+    padding-top: 170px;
+    padding-left: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#contacto #section1 h1 {
+    color: #fff;
+    margin: auto;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    #contacto .blue-section {
+        font-family: 'Inter', sans-serif;
+        background-color: #004AAC;
+        height: 40vh; /* Ocupa toda la altura de la pantalla */
+        padding: 0px;
+        padding-top: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #contacto #section1 h1 {
+        color: #fff;
+        margin: auto;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-weight: 500;
+
+    }
+}
